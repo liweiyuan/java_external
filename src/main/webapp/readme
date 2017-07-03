@@ -1,0 +1,6 @@
+v1.0  
+
+	1. 提供URLConnection外部调用功能的测试用例。
+		用例覆盖URLConnection getResponseCode、getInputStream、getOutputStream方法
+		用例包含URLConnection文件上传、文件下载、传递参数、外部服务错误功能
+	
