@@ -40,5 +40,8 @@
     <span>说明:调用https需要1.通过java生成密钥，2在Tomcat端配置https访问(conf/server.xml),3.在应用中开启https访问的请求(已注释)</span>
 </p>
 <p>验证Https调用<a href="<%=contextPath%>/https_test"><%=contextPath%>/https_test</a></p>
+
+<%--<p>验证Https调用<a href="<%=contextPath%>/hello/https/servlet/hello"><%=contextPath%>/https_test多次调用</a></p>--%>
+
 </body>
 </html>

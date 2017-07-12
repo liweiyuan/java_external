@@ -359,7 +359,7 @@
         <servlet-name>UrlTest</servlet-name>
         <url-pattern>/urlTest</url-pattern>
     </servlet-mapping>
-     <servlet>
+    <servlet>
         <servlet-name>AsyncHttpClientGetServlet</servlet-name>
         <servlet-class>com.ning.asynchttpclient.AsyncHttpClientGetServlet</servlet-class>
     </servlet>
@@ -367,7 +367,7 @@
         <servlet-name>AsyncHttpClientGetServlet</servlet-name>
         <url-pattern>/asynchttpGet</url-pattern>
     </servlet-mapping>
-     <servlet>
+    <servlet>
         <servlet-name>AsyncHttpClientPostServlet</servlet-name>
         <servlet-class>com.ning.asynchttpclient.AsyncHttpClientPostServlet</servlet-class>
     </servlet>
@@ -377,9 +377,9 @@
     </servlet-mapping>
 
     <servlet>
-    <servlet-name>QGetServlet</servlet-name>
-    <servlet-class>com.test.quantile.QGetServlet</servlet-class>
-</servlet>
+        <servlet-name>QGetServlet</servlet-name>
+        <servlet-class>com.test.quantile.QGetServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>QGetServlet</servlet-name>
         <url-pattern>/qGet</url-pattern>
@@ -416,7 +416,6 @@
         <servlet-name>QServlet</servlet-name>
         <url-pattern>/q</url-pattern>
     </servlet-mapping>
-
 
 
     <!--play-->
@@ -478,7 +477,6 @@
     </servlet-mapping>
 
 
-
     <!--jsp頁面-->
     <servlet>
         <servlet-name>jsp_test</servlet-name>
@@ -529,7 +527,6 @@
     </servlet-mapping>
 
 
-
     <!--https-->
     <servlet>
         <servlet-name>url_no_flush_https</servlet-name>
@@ -552,9 +549,9 @@
     </servlet-mapping>
 
     <!--https的调用-->
-  <!--  <security-constraint>
-        <web-resource-collection >
-            <web-resource-name >SSL</web-resource-name>
+    <!--<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>SSL</web-resource-name>
             <url-pattern>/*</url-pattern>
         </web-resource-collection>
 
@@ -562,5 +559,34 @@
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>
         </user-data-constraint>
     </security-constraint>-->
+
+
+    <!--配置多次访问-->
+    <servlet>
+        <servlet-name>helloeveryone</servlet-name>
+        <servlet-class>com.testHttps.HelloServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloeveryone</servlet-name>
+        <url-pattern>/hello/https/test2</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>helloeveryone1</servlet-name>
+        <servlet-class>com.testHttps.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloeveryone1</servlet-name>
+        <url-pattern>/hello/https/test1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servletHelloTest</servlet-name>
+        <servlet-class>com.testHttps.HttpsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletHelloTest</servlet-name>
+        <url-pattern>/hello/https/servlet/hello</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 
