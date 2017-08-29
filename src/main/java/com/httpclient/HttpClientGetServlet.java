@@ -30,7 +30,7 @@ public class HttpClientGetServlet extends HttpServlet {
         String urlString = null;
         stringBuffer.append("<html><head><title></title></head><body><h2>HttpClient 调用</h2>");
         if (req.getParameter("httpclientGetUrl") == null) {
-            urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/test";
+            urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/test?a=java";
             //urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/hello.jsp";
         } else {
             urlString = (String) req.getParameter("httpclientGetUrl");

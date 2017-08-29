@@ -18,7 +18,7 @@ public class Error404Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("<html><head><title></title></head><body><h2>UrlConnection External Error</h2>");
-        String urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/xx";
+        String urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/404";
         URLConnection connection = UrlUtil.createConnection(urlString);
         try {
             connection.connect();

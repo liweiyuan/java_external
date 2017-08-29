@@ -21,10 +21,16 @@ public class TestServlet extends HttpServlet {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
         StringBuffer stringBuffer=new StringBuffer();
         stringBuffer.append("<html><head><title></title></head><body><h2>This is TestServlet</h2>");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(req.getInputStream()));
         String line = null;
+        String body=req.getParameter("platform");
+        if(body!=null){
+            stringBuffer.append(body);
+        }
         StringBuilder stringBuilder = new StringBuilder();
         while ((line = bufferedReader.readLine()) != null) {
             stringBuilder.append(line);

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="AgentTest_External_01:war exploded">
-    <output-path>$PROJECT_DIR$/target/AgentTest_External_01</output-path>
+    <output-path>$PROJECT_DIR$/target/External_01</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -18,10 +18,12 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp:okhttp:2.4.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.4.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/AgentTest_External_01/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/External_01/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="AgentTest_External_01/web/Web" />
     </root>

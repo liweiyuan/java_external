@@ -27,7 +27,7 @@ public class Error404Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html;charset=UTF-8");
         StringBuffer stringBuffer = new StringBuffer();
-        String urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/xx";
+        String urlString = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/404";
 
         HttpClient httpclient = new DefaultHttpClient();
         HttpGet httpget = new HttpGet(urlString);

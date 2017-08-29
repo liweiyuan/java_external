@@ -43,5 +43,9 @@
 
 <%--<p>验证Https调用<a href="<%=contextPath%>/hello/https/servlet/hello"><%=contextPath%>/https_test多次调用</a></p>--%>
 
+
+<h3>okHttpClient調用</h3>
+<p>验证get请求<a href="<%=contextPath%>/okHttp/get"><%=contextPath%>/okHttp/get</a></p>
+<p>验证post请求<a href="<%=contextPath%>/okHttp/post"><%=contextPath%>/okHttp/post</a></p>
 </body>
 </html>

@@ -588,5 +588,25 @@
         <url-pattern>/hello/https/servlet/hello</url-pattern>
     </servlet-mapping>
 
+
+    <!--okHttpClient-->
+    <servlet>
+        <servlet-name>okHttpGet</servlet-name>
+        <servlet-class>com.okhttpclient.OkHttpClientGetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>okHttpGet</servlet-name>
+        <url-pattern>/okHttp/get</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>okHttpPost</servlet-name>
+        <servlet-class>com.okhttpclient.OkHttpClientPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>okHttpPost</servlet-name>
+        <url-pattern>/okHttp/post</url-pattern>
+    </servlet-mapping>
 </web-app>
 

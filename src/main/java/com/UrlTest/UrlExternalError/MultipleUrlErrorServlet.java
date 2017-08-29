@@ -24,7 +24,7 @@ public class MultipleUrlErrorServlet extends HttpServlet {
         resp.setContentType("text/html;charset=UTF-8");
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("<html><head><title></title></head><body><h2>UrlConnection External Error</h2>");
-        String urlString404 = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/xx";
+        String urlString404 = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/404";
         String urlString500 = req.getScheme() + "://" + req.getServerName() + ":" + req.getServerPort() + req.getContextPath() + "/500";
         String urlString900 = "svn://localhost/javaagent";
         String urlString901 = "http://localhosthost:8080/test";

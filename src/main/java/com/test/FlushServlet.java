@@ -38,10 +38,10 @@ public class FlushServlet extends HttpServlet {
         //第一种，没有flush的情况
         //resp.getWriter().write(stringBuffer.toString());
         //第二种，有flush的情况
-        /*PrintWriter printWriter=resp.getWriter();
+        PrintWriter printWriter=resp.getWriter();
         printWriter.write(stringBuffer.toString());
         printWriter.flush();
-        printWriter.close();*/
+        printWriter.close();
         //req.getRequestDispatcher("/hello.jsp").forward(req,resp);
     }
 
