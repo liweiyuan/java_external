@@ -549,7 +549,7 @@
     </servlet-mapping>
 
     <!--https的调用-->
-    <!--<security-constraint>
+   <!-- <security-constraint>
         <web-resource-collection>
             <web-resource-name>SSL</web-resource-name>
             <url-pattern>/*</url-pattern>
@@ -558,8 +558,8 @@
         <user-data-constraint>
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>
         </user-data-constraint>
-    </security-constraint>-->
-
+    </security-constraint>
+-->
 
     <!--配置多次访问-->
     <servlet>

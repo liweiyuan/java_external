@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.URLDecoder;
 
 /**
  * Created by tingyun on 2017/8/29.
@@ -31,13 +30,11 @@ public class OkHttpClientGetServlet extends HttpServlet {
             //urlString = urlpre + "/" + urlString;
             stringBuffer.append(urlString + "<br>");
 
-            OkHttpClient okHttpClient =new OkHttpClient();
-            Request request=new Request.Builder().url(urlString).build();
-            Response response=okHttpClient.newCall(request).execute();
-
-
-            if(response.isSuccessful()){
-                Headers headers=response.headers();
+            OkHttpClient okHttpClient = new OkHttpClient();
+            Request request = new Request.Builder().url(urlString).build();
+            Response response = okHttpClient.newCall(request).execute();
+            if (response.isSuccessful()) {
+                Headers headers = response.headers();
                 stringBuffer.append(headers);
             }
             stringBuffer.append(" </body></html>");
